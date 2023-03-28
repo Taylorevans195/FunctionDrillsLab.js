@@ -14,10 +14,10 @@
 
 
 //CODE HERE
-function greeting(){
+function hello(){
      console.log('Hello World');
  }
- greeting();
+ hello();
 
 ////////////////// PROBLEM 2 ////////////////////
 
@@ -54,6 +54,10 @@ printName("Taylor")
 */
 
 //CODE HERE
+const greeting = (name) => {
+  console.log('Hello $(name)')
+}
+greeting()
 
 
 ////////////////// PROBLEM 5 ////////////////////
@@ -68,6 +72,16 @@ printName("Taylor")
 */
 
 //CODE HERE
+const compareNums = (num1 , num2) => {
+if (num1 > num2){
+  return num1;
+} else if ( num2 > num1) {
+  return num2;
+}else {
+  return num1; 
+}
+
+};
 
 
 ////////////////// PROBLEM 6 ////////////////////
@@ -79,8 +93,11 @@ printName("Taylor")
 */
 
 //CODE HERE
+const add = (par1 , par2) => {
+  return +par1 + +par2 
 
-
+}
+console.log(add ('2' , '3'))
 ////////////////// PROBLEM 7 ////////////////////
 
 /*
@@ -93,7 +110,7 @@ const exclaim = function(str) {
 }
 
 // console.log('arrow')
-// console.log('declaration')
+//console.log('declaration')
 // console.log('expression')
 
 
@@ -109,7 +126,7 @@ const exclaimTwo = str => {
   return str.toUpperCase() + '!!!'
 }
 
-// console.log('arrow')
+console.log('arrow')
 // console.log('declaration')
 // console.log('expression')
 
@@ -134,7 +151,7 @@ function exclaimFour(str) {
 }
 
 // console.log('arrow')
-// console.log('declaration')
+ console.log('declaration')
 // console.log('expression')
 
 
